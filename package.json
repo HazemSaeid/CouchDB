@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "couchdb-client": "^1.0.14",
     "csv": "^5.3.2",
     "csvtojson": "^2.0.10",
     "redis": "^3.0.2"
