@@ -1,5 +1,6 @@
 import py2neo as neo
 import asyncio
+from objects import CovidCase
 
 graph = neo.Graph("bolt://localhost:7687", auth=("neo4j","12345"))
 
@@ -18,4 +19,3 @@ async def add_covid_data(_state, _county,_date, _cases, _deaths):
     tx.create(cases)
     tx.create(county_rel_cases)
     tx.commit()
-    graph.exists(county_rel_cases)
